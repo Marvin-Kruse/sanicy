@@ -1,26 +1,53 @@
-html,
+.btn {
+    position: relative;
+    left: 4px;
+    top: 118px;
+    width: 250px;
+}
+
+.sidebar li.active {
+    background-color: rgba(128, 128, 128, 0.265);
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 25px;
+    left: 0px;
+    margin-left: -20px;
+}
+
+.items {
+    background-color: rgba(255, 255, 255, 0.019);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    vertical-align: middle
+}
+
+.dashboard {
+    position: fixed;
+}
+
+.items img {
+    width: 50%
+}
+
+.items:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+.items {
+    cursor: pointer
+}
+
+.selected {
+    /* Add your desired border shadow styles here */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    position: sticky;
 }
